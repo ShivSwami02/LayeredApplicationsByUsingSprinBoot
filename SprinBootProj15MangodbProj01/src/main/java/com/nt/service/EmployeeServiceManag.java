@@ -40,5 +40,20 @@ public class EmployeeServiceManag implements IEmployeeService {
 		}
 		
 	}
+	@Override
+	public String modifyEmployeeById(String id, double newsal) {
+		Optional<Employee> emp=repo.findById(id);
+		if(emp.isEmpty()) {
+			return "Document Is Not Found";
+		}
+		else {
+			Employee emp1=emp.get();
+			emp1.setSalary(newsal);
+			repo.save(emp1);
+			return "Document Found and Upadated Successfully";
+		}
+		
+	}
+	
 
 }

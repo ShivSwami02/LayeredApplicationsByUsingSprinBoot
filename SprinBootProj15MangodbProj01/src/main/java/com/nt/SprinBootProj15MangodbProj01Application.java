@@ -44,6 +44,16 @@ public class SprinBootProj15MangodbProj01Application {
 			 String Emp=service.getEmployeeById(id);
 			 System.out.println(Emp);
 			 
+			 
+			 System.out.println("Enter The Name To Get THe Employee Data:");
+			 String name=sc.next();
+			 String Employee=service.getEmployeeById(name);
+			 System.out.println(Employee);
+		
+			 System.out.println("Enter Employee id ToUpdate::");
+			 String id1=sc.next();
+			String msg1=service.modifyEmployeeById(id1, 123456D);
+			 System.out.println(msg1);
 		} catch (Exception e1) {
 			
 			e1.printStackTrace();

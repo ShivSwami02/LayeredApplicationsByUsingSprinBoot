@@ -12,4 +12,6 @@ public interface IEmployeeService {
 	public String registerMultipleRegister(List<Employee> list);
 	
 	public String getEmployeeById(String id);
+	
+	public String modifyEmployeeById(String id,double newsal);
 }
