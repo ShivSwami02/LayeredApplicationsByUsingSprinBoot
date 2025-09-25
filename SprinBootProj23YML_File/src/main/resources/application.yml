@@ -1,0 +1,8 @@
+#yml file
+emp:
+   info:
+      eno: 12
+      ename: swami
+      eadd: pune
+      esal: 123456.1
+      desg: engineer
